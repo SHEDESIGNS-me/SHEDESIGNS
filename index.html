@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../website/styles.css">
+
+    
+<!-- Add Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <title>Sherese Maynard - Graphic Designer</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="../website/images/LOGO.png" alt="She Designs logo"></a>
+    <a href="index.html"><img src="../website/images/BANNER.png" alt="Welcome banner"></a>
+  </header>
+
+  <nav>
+    <h1>Home</h1>
+    <a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="Portfolio.html">Portfolio</a> | <a href="Blog.html">Blog</a> | <a href="Contact.html">Contact</a>
+  </nav>
+  <main style="display: grid; grid-template-columns: 1fr 1fr;">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="profile-wrapper">
+          <img src="./images/webResult.JPG" alt="Sherese Maynard Portfolio" class="portfolio-image" style="width: 580px; height: 500px; object-fit: cover; object-position: left top;">
+          <br><br>
+          <div class="profile-info">
+            <h2 class="graphic-designer">Graphic Designer</h2>
+            <h3>Hi, I'm <span>Sherese Maynard</span></h3>
+            <h3>I create <span class="amazing">Amazing</span> things!</h3>
+          </div>
+        </div>
+        <div class="newsletter-wrapper">
+          <form class="newsletter">
+            <input type="email" name="email" id="mail" placeholder="Enter your Email" />
+            <input type="submit" name="submit" value="Let's Start" />
+          </form>
+          <a href="#" class="btn">Mailing List</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="main">
+        <div class="about-content">
+          <a href="Portfolio.html"><img src="./images/illustrator girl.png" alt="illustrator girl" /></a>
+          <div class="about-text">
+            <h1> Welcome to My Creative Universe! </h1>
+            <h5>Bringing Imaginations to Life</h5>
+            <p>
+              I like to spend my nights spending some time illustrating. I practice with new brushes, styles, and colors. I feel like I have become a stronger illustrator in the last few years and found my voice. I invite you to take a peek at my work, to immerse yourself in the stories I've captured. Each project is a chapter in my artistic journey, and I hope they resonate with you in some way. I hope my art touches your heart and sparks your imagination.
+              Take a look at my portfolio and check out some of my latest work.
+            </p>
+          </p>
+          <a href="portfolio.html" target="_blank">
+            <button type="button">TAKE A PEEK AT MY WORK</button>
+          </a>
+          </div>
+ <!----welcome message container-->
+ <div id="welcome-message"
+ class="welcome-message">
+<div class="welcome-content">
+ <hi>Welcome to my portfolio!></hi>
+ <p>Explore a world of creativity, innovation, and passion through my work.</p>
+ <button onclick="closeWelcome()">Close</button>
+</div>
+  </div>
+    </section>
+    <div class="slider-container">
+      <div class="slider">
+        <img class="slide" src="./images/Brown Modern New Product (Poster).png" alt="posterdesign">
+
+        <img class="slide" src="./images/ComicBook_living room.jpg" alt="videogame cover design">
+
+        <img class="slide" src="./images/Unusualplanets_coverart.png" alt="videogame cover design">
+
+        <img class="slide" src="./images/Final Project.jpg" alt="magazine layout design">
+
+        <img class="slide" src="./images/Final Project2.jpg" alt="magazine layout design">
+
+        <img class="slide" src="./images/Final Project3.jpg" alt="magazine layout design">
+
+        <img class="slide" src="./images/Final Project4.jpg" alt="magazine layout design">
+
+        <img class="slide" src="./images/Final Project5.jpg" alt="magazine layout design">
+
+        <img class="slide" src="./images/Mental_health_poster.png" alt="posterdesign">
+
+      </div>
+      <button class="arrow prev">&#10094;</button>
+      <button class="arrow next">&#10095;</button>
+  <div class="slider-labels">
+      <span class="label"></span>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <div class="footer-container">
+      <footer>
+        <div class="footer-container">
+          <h2>Follow me here!</h2>
+          <!-- Add social media icons -->
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a><br>
+      @<a href="mailto:smaynard1@student.egcc.edu">SHEDESIGNS</a><br><P>"Where Creativity Meets Vision"</P>
+    </div>
+   
+  </footer>
+  <script>
+    
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const labels = document.querySelectorAll(".slider-labels .label");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let slideIndex = 0;
+
+    // Function to show the current slide
+    function showSlide() {
+      slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
+      });
+    }
+
+    // Function to navigate to the previous slide
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+      showSlide();
+    }
+
+    // Function to navigate to the next slide
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide();
+    }
+
+    // Add click event listeners to the arrow buttons
+    prevBtn.addEventListener("click", prevSlide);
+    nextBtn.addEventListener("click", nextSlide);
+
+    // Initial display of the first slide
+    showSlide(); 
+  </script>
+  
+<script src="./script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../website/styles.css">
+  <script>
+    // JavaScript to toggle the visibility of additional design challenges
+    function toggleDesignChallenges() {
+      const hiddenChallenges = document.querySelectorAll(".hidden-design-challenge");
+      hiddenChallenges.forEach(challenge => {
+        challenge.style.display = (challenge.style.display === "none") ? "block" : "none";
+      });
+
+      // Change the text of the button based on its state
+      const seeMoreButton = document.getElementById("see-more-button");
+      if (seeMoreButton.innerText === "See More Challenges") {
+        seeMoreButton.innerText = "Hide Challenges";
+      } else {
+        seeMoreButton.innerText = "See More Challenges";
+      }
+    }
+  </script>
+<!-- Add Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>Blog</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="../website/images/LOGO.png" alt="She Designs logo" ></a>
+    <a href="index.html"><img src="../website/images/BANNER.png" alt="Welcome banner" ></a>
+  </header>
+
+  <nav>
+    <h1>Blog</h1>
+    <a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="Portfolio.html">Portfolio</a> | <a href="Blog.html">Blog</a> | <a href="Contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h1>Create an Account</h1>
+      <form class="registration-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </section>
+  
+    <div class="blog-posts">
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="images/Meet the Creator.png" alt="meet the creator" width="400" height="400" />
+        </div>
+        <div class="blog-content">
+          <h3>Meet the Team:Join Me on this Adventure</h3>
+          <p>Meet Sherese Maynard, the visionary force behind this blog. As a Graphic Designer and Animator based in the bustling city of New York, Sherese's creativity knows no bounds. Her keen eye for aesthetics, coupled with a passion for pushing boundaries, gives birth to visually stunning content that captivates our readers. Sherese's journey into the world of design is as inspiring as her creations, and she strives to share her knowledge and experiences with all aspiring artists.
+          As the sole member of this creative team, I extend a warm invitation to you, dear reader, to be a part of this journey. Let us build a community of dreamers, where imagination knows no bounds. Together, we will explore the latest trends in design, embark on fun challenges, and delve into the depths of creativity.
+           So, whether you're an aspiring designer seeking guidance, an art lover in search of inspiration, or simply someone who revels in the magic of creativity, I welcome you to join me on this adventure. Let's unlock the doors to boundless imagination and discover the wonders that lie at the intersection of art and technology.<br>
+
+<em>Stay Inspired, Stay Creative!</em>
+          </p>
+
+          <!-- Form to allow visitors to leave comments -->
+          <form action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="images/Born to create.png" alt="born to create" width="400" height="400" />
+        </div>
+        <div class="blog-content">
+          <h3>Born to Create: Embracing the Journey of a Graphic Designer</h3>
+          <p>From an early age, the spark of creativity ignites within some of us, leaving an indelible mark on our souls. The pursuit of creativity, like a compass guiding our path, leads us to the vibrant world of graphic design. Whether it's sketching doodles on school notebooks or experimenting with digital design tools, graphic designers are driven by an innate desire to transform ideas into visual masterpieces.
+           Residing in the heart of Brooklyn, NY, I draw inspiration from the diverse culture and bustling energy of the city. Each day, I find myself enchanted by the endless possibilities that design offers. Whether it's crafting a captivating logo, bringing characters to life through animation, or creating stunning illustrations that evoke emotions, I pour my heart and soul into every project.
+           My artistic journey began with a spark of curiosity and a love for self-expression. After a hiatus from the world of design, I found myself returning to my true calling - the world of visual storytelling. The decision to rekindle my creative flame led me to pursue a major in Internet/Digital Media Design at EGCC, where I immersed myself in a world of artistic exploration.
+           I am Sherese Maynard, the one-woman powerhouse driving the magic behind this blog. As a Graphic Designer, Illustrator, Animator, and Front-end Developer based in the vibrant city of New York, I am a multidisciplinary artist with a burning passion for all things creative.
+           What keeps the flame burning for you? lets chat!</p>
+           <em>Stay Inspired, Stay Creative!</em>
+
+          <form action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      
+      <div class="blog-post">
+        <div class="blog-image">
+          <img src="images/Whats new in Design.png" alt="new in design" width="400" height="400" />
+        </div>
+        <div class="blog-content">
+          <h3>What's New In Design:Exploring the Exciting Trends and Innovations</h3>
+          <p>Augmented Reality (AR) and Immersive Experiences:<br>
+            Design is a dynamic and ever-evolving field, constantly influenced by technological advancements, cultural shifts, and the creative spirit of designers worldwide. As we embark on a journey to discover "What's New in Design," we find ourselves at the cusp of exciting innovations and trends that redefine the way we perceive and interact with visual communication. Join me as we explore the cutting-edge concepts and fresh ideas that are shaping the future of design<br>
+            One of the most thrilling developments in design is the integration of Augmented Reality (AR) and immersive experiences. From interactive product catalogs that come to life before our eyes to engaging AR advertisements, designers are blurring the line between the digital and physical realms. AR empowers brands to offer captivating experiences, where consumers can explore products in a virtual space, try on virtual clothing, or even visualize how furniture fits into their homes.
+            The realm of design is an exhilarating playground of innovation and creativity. <br>
+            "What's New in Design" showcases a plethora of opportunities and possibilities, from blending digital and physical experiences with AR to advocating for sustainability and inclusivity. As designers, we have the power to shape the world around us, touching lives through visuals that inspire, inform, and provoke thought. So, let us embrace these new horizons, pushing the boundaries of design to craft a more beautiful, accessible, and meaningful tomorrow.</p>
+
+          <em>Stay Inspired, Stay Creative!</em>
+
+          <form action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <h3>Fun Design Challenges</h3>
+
+  <div class="design-challenge">
+    <h3>Design a Logo Using Only Three Colors</h3>
+    <p>Challenge yourself to create a visually striking logo using just three colors. Consider how you can convey the essence of a brand or concept with a limited color palette.</p>
+  </div>
+
+  <div class="design-challenge">
+    <h3>Create an Illustration with a Given Word</h3>
+    <p>Choose a random word (e.g., "adventure," "serenity," or "bloom") and use it as inspiration to create an illustration that reflects its meaning or emotion.</p>
+  </div>
+
+  <!-- Add more design challenges as needed -->
+
+<!-- Hidden design challenges (initially hidden) -->
+<div class="design-challenge hidden-design-challenge">
+  <h3>Design a Business Card for a Fictional Company</h3>
+  <p>Invent a fictional company and design an eye-catching business card that represents its brand identity.</p>
+</div>
+
+<div class="design-challenge hidden-design-challenge">
+  <h3>Create a Typography Poster</h3>
+  <p>Design an artistic typography poster with a meaningful quote or phrase that inspires you.</p>
+</div>
+
+<!-- Add more hidden design challenges as needed -->
+
+<!-- See More button -->
+<button class="see-more-button" id="see-more-button" onclick="toggleDesignChallenges()">See More Challenges</button>
+
+  <h3>Q&A and FAQ Videos</h3>
+
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Q&A Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Frequently Asked Questions about Graphic Design</h3>
+    <p>In this video, I answer some of the most common questions I receive about graphic design, including tips for beginners and advice on improving design skills.</p>
+  </div>
+
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Q&A Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Behind the Scenes of My Creative Process</h3>
+    <p>Curious about how I approach a design project? In this video, I take you behind the scenes and share insights into my creative process.</p>
+  </div>
+
+  <!-- Add more Q&A and FAQ videos as needed -->
+
+</section>
+  <footer>
+    <div class="footer-container">
+      <h2>Follow me here!</h2>
+      <!-- Add social media icons -->
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a><br>
+      @<a href="mailto:smaynard1@student.egcc.edu">SHEDESIGNS</a><br><P>"Where Creativity Meets Vision"</P>
+      
+    </div>
+  </footer>
+</body>
+</html>
+
