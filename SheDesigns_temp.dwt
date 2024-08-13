@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="EN">
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Home-SheDesigns</title>
+<!-- TemplateEndEditable -->
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<meta name="description" content="SheDesigns-Add description here">
+
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<header><!-- TemplateBeginEditable name="EditRegion8" --><a href="index.html"><img src="../website/images/LOGO.png" alt="She Designs logo" width="256" height="133" align="left"/></a><a href="index.html"><img src="../website/images/BANNER.png" alt="Welcome banner" width="1485" height="230" align="top"/></a><!-- TemplateEndEditable -->
+  <nav>
+        
+     <a href="index.html">Home</a> |  <a href="aboutMe.html"> About Us</a> |  <a href="Portfolio.html">Portfolio</a> | <a href="Blog.html">Blog</a> | <a href="Contact.html">Contact</a>
+  </nav>
+</header>
+     <br> 
+ 
+     
+<!-- TemplateBeginEditable name="EditRegion3" -->Hi<!-- TemplateEndEditable -->.<br>
+<!-- TemplateBeginEditable name="EditRegion4" -->EditRegion4<!-- TemplateEndEditable --><br>
+<!-- TemplateBeginEditable name="EditRegion5" -->I'm A Graphic Designer<br>
+My name is Sherese Maynard I create Amazing things!<br>
+I have a keen eye for creating engaging UI, bringing products to life.<!-- TemplateEndEditable -->
+<footer><!-- TemplateBeginEditable name="EditRegion7" -->
+  <h2>Follow me here!</h2>
+  <br>
+  <img src="..//website/images/SOCIAL ICONS.png" alt=" social media icons" style="width:30;height:30;margin:0 auto;"/> <br>
+  @<a href="mailto:smaynard1@student.egcc.edu">SHEDESIGNS</a>
+<P>This is the footer of this page</P>
+<!-- TemplateEndEditable --></footer>
+
+</body>
+
+</html>
+ 
